@@ -1,22 +1,29 @@
-# README
+# Tic Tac Toe Backend with Ruby on Rails
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+![ss](https://cdn.dribbble.com/users/108183/screenshots/5288723/tic_tac_toe_loader_.gif)
 
-* Ruby version
-  ruby 2.5.5p157
-* System dependencies
+## Prerequisites
 
-* Configuration
+You will need the following things properly installed on your computer.
 
-* Database creation
+* [Ruby on Rails](https://git-scm.com/)
+* [Node.js](https://nodejs.org/) (with npm)
+* MySQL (You can use XAMPP)
 
-* Database initialization
+## Installation
 
-* How to run the test suite
+* `git clone https://github.com/serhangursoy/game-ruby-backend.git`
+* `cd game-ruby-backend`
+* `bundle install`
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
+## Running / Development
 
-* ...
+Just serve it with
+* Create a database at first. It's preset as tictacruby , but feel free to change it at config/database.yml
+* `rails db:migrate`
+* `rails s`
+
+### Frontend
+
+* Go and check [EmberJS Frontend](https://github.com/serhangursoy/game-ember-frontend)
