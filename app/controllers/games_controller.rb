@@ -12,6 +12,7 @@ class GamesController < ApplicationController
   # GET /games/1
   # GET /games/1.json
   def show
+    render json: { status: "success", message: "Game request successful!", data: @game }, status: :ok
   end
 
   # GET /games/new
@@ -61,8 +62,8 @@ class GamesController < ApplicationController
   end
 
   def getUserGames
-    @owned_games   = Game.find_by_p1(params[:id])
-    @invited_games = Game.find_by_p2(params[:id])
+    @owned_games   = Game.where(p1: params[:id])
+    @invited_games = Game.where(p2: params[:id])
     render json: { owned_games: @owned_games, invited_games: @invited_games }
   end
 
@@ -74,6 +75,6 @@ class GamesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def game_params
-      params.require(:game).permit(:table, :p1, :p2, :title)
+      params.require(:game).permit(:table, :p1, :p2, :title, :turn, :winner, :finished)
     end
 end
