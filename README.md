@@ -1,6 +1,8 @@
 # Tic Tac Toe Backend with Ruby on Rails
 
-![ss](https://cdn.dribbble.com/users/108183/screenshots/5288723/tic_tac_toe_loader_.gif)
+<p align="center">
+  <img width="400" height="300" src="https://cdn.dribbble.com/users/108183/screenshots/5288723/tic_tac_toe_loader_.gif">
+</p>
 
 ## Prerequisites
 
